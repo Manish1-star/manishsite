@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Personal platform of Manish Ghimire to connect, teach, and share knowledge">
+  <title>Manish Ghimire - Computer Teacher</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+    }
+    .navbar {
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    .hero {
+      text-align: center;
+      background: linear-gradient(to right, #007bff, #6c63ff);
+      color: white;
+      padding: 5rem 1rem;
+    }
+    .hero h1 {
+      font-size: 3rem;
+    }
+    .cta-btn {
+      background-color: #ffc107;
+      border: none;
+      color: black;
+      padding: 0.8rem 1.5rem;
+      font-size: 1.1rem;
+      border-radius: 5px;
+      margin-top: 2rem;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+    .cta-btn:hover {
+      background-color: #e0a800;
+      color: white;
+    }
+    .form-control {
+      border-radius: 8px;
+    }
+    .post-section {
+      padding: 2rem 0;
+    }
+    .post-card {
+      margin-bottom: 1.5rem;
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      background: #f8f9fa;
+    }
+    .footer {
+      background: #343a40;
+      color: white;
+      padding: 1.5rem 0;
+    }
+    .footer a {
+      color: #ffc107;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="#">Manish Ghimire</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero">
+    <h1>Welcome to Manish Ghimire's Platform</h1>
+    <p class="lead">Computer Teacher From Nepal</p>
+    <p>I am here to support your journey towards mastering technology and achieving career success.</p>
+    <a href="#signup" class="cta-btn">Get Started</a>
+  </header>
+
+  <!-- About Section -->
+  <section id="about" class="container py-5 text-center">
+    <h2 class="text-center mb-4">About Me</h2>
+    <p>
+      I specialize in providing online classes in AI, Python, and Django while helping organizations digitize their operations and grow their revenue. My mission is to guide you effectively in achieving your goals through technology.
+    </p>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="container py-5">
+    <h2 class="text-center mb-4">What I Offer</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="post-card">
+          <h4>📚 Online Classes</h4>
+          <p>Learn AI, Python, and Django in an interactive and easy-to-understand manner.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="post-card">
+          <h4>💡 Tech Consultation</h4>
+          <p>Help your organization digitize, boost efficiency, and increase revenue.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="post-card">
+          <h4>📹 News Video Posting</h4>
+          <p>Stay informed about tech developments with curated videos and updates.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Signup Section -->
+  <section id="signup" class="container py-5">
+    <h2 class="text-center mb-4">Create an Account</h2>
+    <form>
+      <div class="mb-3">
+        <label for="name" class="form-label">Full Name</label>
+        <input type="text" class="form-control" id="name" placeholder="Enter your name">
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label">Email Address</label>
+        <input type="email" class="form-control" id="email" placeholder="Enter your email">
+      </div>
+      <div class="mb-3">
+        <label for="password" class="form-label">Password</label>
+        <input type="password" class="form-control" id="password" placeholder="Create a password">
+      </div>
+      <div class="d-grid">
+        <button type="submit" class="btn btn-primary">Sign Up</button>
+      </div>
+    </form>
+  </section>
+
+  <!-- Post Section -->
+  <section class="post-section container">
+    <h2 class="text-center mb-4">Share Your Thoughts</h2>
+    <form>
+      <div class="mb-3">
+        <textarea class="form-control" rows="4" placeholder="Write your statement..."></textarea>
+      </div>
+      <div class="d-grid">
+        <button type="submit" class="btn btn-primary">Post</button>
+      </div>
+    </form>
+    <div class="mt-5">
+      <h4>Recent Posts</h4>
+      <div class="post-card">
+        <p><strong>John Doe:</strong> This platform is amazing! It's so easy to share my thoughts.</p>
+      </div>
+      <div class="post-card">
+        <p><strong>Jane Smith:</strong> Loving the professional design of this website!</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="container py-5 text-center">
+    <h2>Contact Me</h2>
+    <p>📧 Email: <a href="mailto:fakemanish32@gmail.com">fakemanish32@gmail.com</a></p>
+    <p>🌐 Facebook: <a href="https://www.facebook.com/manishghimire097" target="_blank">Manish Ghimire</a></p>
+    <p>📺 YouTube: <a href="https://youtube.com/MwNisH" target="_blank">MwNisH</a></p>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer text-center">
+    <p>&copy; 2025 Manish Ghimire. All rights reserved.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+  </html>
